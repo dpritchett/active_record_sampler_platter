@@ -1,4 +1,4 @@
-Copyright (c) 2013 Daniel J. Pritchett
+Copyright (c) 2013 Coroutine, LLC
 
 MIT License
 
