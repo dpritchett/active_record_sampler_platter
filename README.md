@@ -1,6 +1,6 @@
 # ActiveRecordSamplerPlatter
 
-TODO: Write a gem description
+Adds Array-style :sample methods to ActiveRecord objects
 
 ## Installation
 
@@ -18,7 +18,23 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+# Equivalent to Array#Sample but usable on
+# ActiveRecord models and relations!
+#
+# Returns a result with two quick queries:
+#
+# > Spree::Product.sample
+#    (4.9ms)  SELECT COUNT(*) FROM "spree_products"
+#    (3.8ms)  SELECT "spree_products".* FROM
+#        "spree_products" LIMIT 1 OFFSET 4132
+#
+# => #<Spree::Product id: 414, name: "...
+#
+def sample
+  self.offset(rand(self.count)).first
+end
+```
 
 ## Contributing
 
