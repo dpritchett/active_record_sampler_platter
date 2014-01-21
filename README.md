@@ -3,7 +3,7 @@
 [![Gem Version](https://badge.fury.io/rb/active_record_sampler_platter.png)](http://badge.fury.io/rb/active_record_sampler_platter)
 [![Code Climate](https://codeclimate.com/github/dpritchett/active_record_sampler_platter.png)](https://codeclimate.com/github/dpritchett/active_record_sampler_platter)
 
-Adds Array-style :sample methods to ActiveRecord objects
+Adds Array-style [`:sample`](http://www.ruby-doc.org/core-2.1.0/Array.html#method-i-sample) methods to ActiveRecord objects
 
 ## Installation
 
